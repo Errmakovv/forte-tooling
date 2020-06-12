@@ -4,12 +4,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 9000,
-        hot: true,
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
